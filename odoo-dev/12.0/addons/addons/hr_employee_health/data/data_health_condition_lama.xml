@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!--
+      Copyright (C) 2018 Brainbean Apps (https://brainbeanapps.com)
+      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+    -->
+
+    <!-- hr.employee.health.condition.periode -->
+    <record model="hr.employee.health.condition.lama" id="1minggu">
+      <field name="name">1 Minggu</field>
+    </record>
+    <record model="hr.employee.health.condition.lama" id="2minggu">
+      <field name="name">2 Minggu</field>
+    </record>
+    <record model="hr.employee.health.condition.lama" id="1bulan">
+      <field name="name">1 Bulan</field>
+    </record>
+    <record model="hr.employee.health.condition.lama" id="2bulan">
+      <field name="name">2 Bulan</field>
+    </record>
+
+</odoo>

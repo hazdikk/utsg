@@ -1,0 +1,161 @@
+<odoo>
+  <data>
+   <record model="ir.ui.view" id="employee_golongan_view">
+      <field name="name">hr.employee.view</field>
+      <field name="model">hr.employee</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="hr.view_employee_form"/>
+      <field name="arch" type="xml">
+        <!-- <xpath expr="//page[@name='public']" position="attributes">
+          <attribute name="string">Tes</attribute>
+        </xpath> -->
+
+
+        <xpath expr="//page[2]" position="after">
+          <page name="history" string="History">
+            <group string="Pendidikan">
+          </group>
+          </page>
+        </xpath>
+
+        <xpath expr="//page[@name='personal_information']" position="attributes">
+          <attribute name="string">Informasi Pribadi</attribute>
+        </xpath>
+        <xpath expr="//group[@name='work_permit']" position="attributes">
+          <attribute name="string">Work</attribute>
+        </xpath>
+
+        <!-- citizen -->
+        <xpath expr="//field[@name='country_id']" position="attributes">
+          <attribute name="string">Kewarganegaraan</attribute>
+        </xpath>
+        <xpath expr="//field[@name='country_id']" position="after">
+          <field name="suku"/>
+        </xpath>
+        <xpath expr="//field[@name='identification_id']" position="attributes">
+          <attribute name="string">No KTP</attribute>
+        </xpath>
+        <xpath expr="//field[@name='identification_id']" position="after">
+          <field name="nokk"/>
+        </xpath>
+        <xpath expr="//field[@name='passport_id']" position="attributes">
+          <attribute name="string">No NPWP</attribute>
+        </xpath>
+        <xpath expr="//field[@name='identification_id']" position="attributes">
+          <attribute name="string">No KTP</attribute>
+        </xpath>
+
+        <!-- contact -->
+        <xpath expr="//field[@name='address_home_id']" position="after">
+          <field name="email"/>
+        </xpath>
+        <xpath expr="//field[@name='email']" position="after">
+          <field name="phone"/>
+        </xpath>
+        
+
+        <!-- birth -->
+        <xpath expr="//field[@name='country_of_birth']" position="after">
+          <field name="darah"/>
+        </xpath>
+
+        <!--status-->
+        <xpath expr="//field[@name='children']" position="after">
+          <field name="anakke"/>
+        </xpath>
+        <xpath expr="//field[@name='anakke']" position="after" >
+          <field name="agama"/>
+        </xpath>
+        <xpath expr="//field[@name='agama']" position="after" >
+          <field name="tinggi"/>
+        </xpath>
+        <xpath expr="//field[@name='tinggi']" position="after" >
+          <field name="berat"/>
+        </xpath>
+
+        <!-- work -->
+        <xpath expr="//field[@name='visa_no']" position="attributes">
+          <attribute name="string">Badge</attribute>
+        </xpath>
+        <xpath expr="//field[@name='visa_no']" position="after" >
+          <field name="status_p"/>
+        </xpath>
+        <xpath expr="//field[@name='status_p']" position="after" >
+          <field name="gaji_p"/>
+        </xpath>
+        <xpath expr="//field[@name='gaji_p']" position="after" >
+          <field name="tgl_pensi"/>
+        </xpath>
+        <xpath expr="//field[@name='tgl_pensi']" position="after" >
+          <field name="tgl_masuk"/>
+        </xpath>
+        <xpath expr="//field[@name='tgl_masuk']" position="after" >
+          <field name="tgl_angkat"/>
+        </xpath>
+        <xpath expr="//field[@name='tgl_angkat']" position="after" >
+          <field name="jabatan_a"/>
+        </xpath>
+        <xpath expr="//field[@name='jabatan_a']" position="after" >
+          <field name="gol_a"/>
+        </xpath>
+        <xpath expr="//field[@name='gol_a']" position="after" >
+          <field name="gol_b"/>
+        </xpath>
+
+
+        <!-- HIDE -->
+        <xpath expr="//page[@name='public']" position="attributes">
+          <field name="public"/> 
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='permit_no']" position="attributes" >
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='visa_expire']" position="attributes" >
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='emergency_contact']" position="attributes">
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='emergency_phone']" position="attributes">
+          <attribute name="invisible">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='km_home_work']" position="attributes">
+          <attribute name="invisible">1</attribute>
+        </xpath>
+
+        <!-- <xpath expr="//field[@name='address_id']" position="after">
+          <group>
+            <field name="badge"/>
+            <field name="nama"/>
+            <field name="alamat"/>
+            <field name="email" widget="email"/>
+            <field name="status_pegawai"/>
+            <field name="tempat_lahir"/>
+            <field name="tanggal_lahir"/>
+            <field name="tanggal_pensiun"/>
+            <field name="tanggal_masuk"/>
+            <field name="tanggal_pengangkatan"/>
+            <field name="jabatan_awal_masuk"/>
+            <field name="jenis_kelamin"/>
+            <field name="agama"/>
+            <field name="no_ktp"/>
+            <field name="no_kk"/>
+            <field name="status_perkawinan"/>
+            <field name="anak_ke"/>
+            <field name="golongan_masuk"/>
+            <field name="golongan_saat_ini"/>
+            <field name="gaji_pokok"/>
+            <field name="no_npwp"/>
+            <field name="golongan_darah"/>
+            <field name="tinggi_badan"/>
+            <field name="berat_badan"/>
+            <field name="kewarganegaraan"/>
+            <field name="suku_bangsa"/>
+            <field name="no_telepon" widget="phone"/>
+          </group>
+        </xpath> -->
+      </field>
+    </record>
+  </data>
+</odoo>
