@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!--
+      Copyright (C) 2018 Brainbean Apps (https://brainbeanapps.com)
+      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+    -->
+
+    <!-- hr.employee.health.condition.type -->
+    <record model="hr.employee.health.condition.type" id="tipes">
+      <field name="name">Tipes</field>
+    </record>
+    <record model="hr.employee.health.condition.type" id="ambeyen">
+      <field name="name">Ambeyen</field>
+    </record>
+
+</odoo>
